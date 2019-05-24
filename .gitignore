@@ -1,5 +1,5 @@
 # IDE-specific files and directories
-.project/
+.project
 .settings/
 
 # Compiled class file
