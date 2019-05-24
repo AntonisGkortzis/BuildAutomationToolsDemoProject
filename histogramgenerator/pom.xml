@@ -8,13 +8,13 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>histogramgenerator</artifactId>
+	
 	<name>Histogram Generator</name>
 	<description>
 		This modules creates a histogram from a given file of grades.
 		The generated jar is a "fat-jar" that includes the dependency 
 		in the main executable jar.  
 	</description>
-
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
@@ -23,6 +23,34 @@
 			<artifactId>jfreechart</artifactId>
 			<version>1.5.0</version>
 		</dependency>
-
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+						<!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
+							<mainClass>histogramgenerator.JFreeChartXYLineChartDemo</mainClass> 
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
 </project>
