@@ -1,3 +1,7 @@
+# IDE-specific files and directories
+.project/
+.settings/
+
 # Compiled class file
 *.class
 
