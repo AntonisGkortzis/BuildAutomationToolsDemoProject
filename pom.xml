@@ -18,5 +18,6 @@
 
 	<modules>
 		<module>histogramgenerator</module>
+		<module>imagemanipulator</module>
 	</modules>
 </project>

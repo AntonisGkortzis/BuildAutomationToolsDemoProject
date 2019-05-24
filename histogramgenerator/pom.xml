@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>dmst.seip.angor</groupId>
+		<artifactId>seip.demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>histogramgenerator</artifactId>
+	<name>Histogram Generator</name>
+	<description>
+		This modules creates a histogram from a given file of grades.
+		The generated jar is a "fat-jar" that includes the dependency 
+		in the main executable jar.  
+	</description>
+
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+
+	</dependencies>
+</project>
