@@ -117,3 +117,8 @@ Note that the histogramgenerator-0.0.1-SNAPSHOT.jar is not executable.
 
 ## Build with Gradle
 //WIP
+
+## How to..
+1) Setup Maven in Windows - [video tutorial](https://www.youtube.com/watch?v=JhZcaL-QRdQ&feature=youtu.be)
+2) Setup Maven in Linux. Execute ```sudo apt update && sudo apt install maven``` in a terminal. 
+
