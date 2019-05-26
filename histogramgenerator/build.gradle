@@ -3,16 +3,12 @@ plugins {
   id 'application'
 }
 
-repositories {
-  mavenCentral() 
-}
-
-dependencies {
-  compile 'org.jfree:jfreechart:1.5.0'
-}
-
 application {
   mainClassName = 'histogramgenerator.JFreeChartXYLineChartDemo'
+}
+
+repositories {
+  mavenCentral() 
 }
 
 configurations {
@@ -26,10 +22,11 @@ dependencies {
 
 jar {
   from {
-    configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    configurations.extraLibs.collect { 
+      it.isDirectory() ? it : zipTree(it) 
+    }
   }
   manifest {
     attributes 'Main-Class': 'histogramgenerator.JFreeChartXYLineChartDemo'
   }
 }
-
