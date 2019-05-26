@@ -1,0 +1,13 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  mavenCentral()
+}
+
+jar {
+ onlyIf {
+   !sourceSets.main.allSource.files.isEmpty() 
+ }
+}

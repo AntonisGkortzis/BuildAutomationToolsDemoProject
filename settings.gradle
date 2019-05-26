@@ -1,0 +1,3 @@
+rootProject.name = 'Build Automation Tools demo project'
+include 'dummyhelloworld', 'histogramgenerator'
+
