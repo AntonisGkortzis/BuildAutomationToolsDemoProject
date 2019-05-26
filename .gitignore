@@ -6,6 +6,9 @@
 # Maven output files and directories
 target/
 
+# Gradle output files and directories
+build/
+
 # Compiled class file
 *.class
 
