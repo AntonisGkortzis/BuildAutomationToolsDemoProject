@@ -1,0 +1,32 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+application {
+  mainClassName = 'imagemanipulator.ImageManipulatorDemo'
+}
+
+repositories {   
+  mavenCentral()
+}
+
+configurations {
+  extraLibs
+}
+
+dependencies {
+  extraLibs 'net.imagej:ij:1.52i'
+  configurations.compile.extendsFrom(configurations.extraLibs)
+}
+
+jar {
+  from {
+    configurations.extraLibs.collect { 
+      it.isDirectory() ? it : zipTree(it) 
+    }
+  }
+  manifest {
+    attributes 'Main-Class': 'imagemanipulator.ImageManipulatorDemo'
+  }
+}
