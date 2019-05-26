@@ -7,10 +7,14 @@
 target/
 
 # Gradle output files and directories
+.gradle/
 build/
 
 # Compiled class file
 *.class
+
+# vim files
+*.swp
 
 # Log file
 *.log
