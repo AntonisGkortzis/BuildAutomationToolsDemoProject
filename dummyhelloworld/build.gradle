@@ -1,14 +1,9 @@
 plugins {
   id 'java'
-  id 'application'
 }
 
 repositories {
   mavenCentral() 
-}
-
-application {
-  mainClassName = 'dummyhelloworld.MessagePrinter'
 }
 
 jar {
