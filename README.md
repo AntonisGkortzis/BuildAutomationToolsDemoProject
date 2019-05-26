@@ -116,9 +116,11 @@ java -jar histogramgenerator/target/histogramgenerator-0.0.1-SNAPSHOT-jar-with-d
 Note that the histogramgenerator-0.0.1-SNAPSHOT.jar is not executable. 
 
 ## Build with Gradle
-//WIP
+//work in progress...
 
 ## How to..
 1) Setup Maven in Windows - [video tutorial](https://www.youtube.com/watch?v=JhZcaL-QRdQ&feature=youtu.be)
 2) Setup Maven in Linux. Execute ```sudo apt update && sudo apt install maven``` in a terminal. 
+3) Setup Gradle in Windows. Similarly to 1) Maven, download the latest binaries from the official [web page](https://gradle.org/releases/) and apply the same steps.
+4) Setup Gradle in Linux. Follow the [official instructions](https://gradle.org/install/#manually).  
 
