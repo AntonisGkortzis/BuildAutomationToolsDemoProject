@@ -117,5 +117,5 @@ Note that the histogramgenerator-0.0.1-SNAPSHOT.jar is not executable.
 
 
 ## How to..
-1) Setup Maven in Windows - [video tutorial](https://www.youtube.com/watch?v=JhZcaL-QRdQ&feature=youtu.be)
+1) Setup Maven in Windows - [tutorial](https://mkyong.com/maven/how-to-install-maven-in-windows/)
 2) Setup Maven in Linux. Execute ```sudo apt update && sudo apt install maven``` in a terminal. 
