@@ -13,7 +13,7 @@ This repository consists of a parent Maven project and three sub-project (module
 
 Execute the following command in the repository root directory in order to build all modules. 
 ```
-mvn install
+mvn package
 ```
 This command generates a seperate jar file in each module's corresponding target (```module/target```) directory.  
 The same building instructions are provided also by Gradle. For using gradle to build the application check the [corresponding section](#build-with-gradle). 
